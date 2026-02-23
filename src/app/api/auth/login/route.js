@@ -12,16 +12,6 @@ export async function POST(request) {
         const adminUsername = process.env.ADMIN_USERNAME || "admin";
         const adminPasswordHash = process.env.ADMIN_PASSWORD_HASH
 
-        // DEBUG TEMPORAL
-        console.log("=== DEBUG LOGIN ===");
-        console.log("username recibido:", username);
-        console.log("adminUsername env:", adminUsername);
-        console.log("hash existe:", !!adminPasswordHash);
-        console.log("hash completo:", adminPasswordHash);
-        console.log("hash longitud:", adminPasswordHash?.length);
-        console.log("password recibida:", password);
-        console.log("==================");
-
         if (!adminPasswordHash) {
             return Response.json(
                 { error: "Servidor no configurado correctamente. Falta ADMIN_PASSWORD_HASH" },

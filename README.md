@@ -167,3 +167,9 @@ Token inválido o expirado.
 
 500 Server Error\
 Revisar variables de entorno (ej: ADMIN_PASSWORD_HASH).
+
+ADMIN_PASSWORD_HASH no funciona
+Los `$` del hash bcrypt deben escaparse con `\` en `.env.local`:
+```env
+ADMIN_PASSWORD_HASH=\$2b\$10\$hash_completo_aqui
+```

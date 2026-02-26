@@ -11,8 +11,7 @@ import Link from "next/link";
 const NAV_ITEMS = [
   { href: "/dashboard", label: "Dashboard", icon: "⬡" },
   { href: "/dashboard/servicios", label: "Top Servicios", icon: "◈" },
-  { href: "/dashboard/conversaciones", label: "Conversaciones", icon: "◎" },
-  { href: "/dashboard/funnel", label: "Funnel Menú", icon: "◇" },
+  { href: "/dashboard/conversaciones", label: "Resumen Conversaciones", icon: "◎" },
   { href: "/dashboard/horarios", label: "Horarios Pico", icon: "◉" },
 ];
 

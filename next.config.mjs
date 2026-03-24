@@ -7,7 +7,9 @@ const __dirname = dirname(__filename);
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Aquí puedes agregar imágenes o redirecciones si las necesitas luego
+  turbopack: {
+    root: __dirname,
+  },
 };
 
 export default nextConfig;
